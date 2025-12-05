@@ -1,8 +1,14 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch --allow-read --allow-write main.ts",
+    "start": "deno run --allow-read --allow-write main.ts"
   },
   "imports": {
-    "citty": "npm:citty@^0.1.6"
+    "citty": "npm:citty@^0.1.6",
+    "consola": "npm:consola@^3.4.2",
+    "yaml": "npm:yaml@^2.3.4",
+    "flat": "npm:flat@^5.0.2",
+    "xlsx": "npm:xlsx@^0.18.5",
+    "std/": "https://deno.land/std@0.208.0/"
   }
 }
